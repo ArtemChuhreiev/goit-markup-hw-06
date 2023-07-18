@@ -388,14 +388,30 @@ img {
   }
 }
 .hero-title {
-  font-size: 56px;
-  line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--white-color);
-  max-width: 496px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
   margin: 0 auto;
-  margin-bottom: 48px;
+  max-width: 320px;
+  margin: 0 auto;
+  margin-bottom: 72px;
+}
+@media only screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin-bottom: 36px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .hero-title {
+    margin-bottom: 48px;
+  }
 }
 .hero-button {
   background-color: #4d5ae5;
@@ -563,12 +579,11 @@ img {
 
 .example {
   display: none;
-  /* padding-bottom: 120px; */
 }
 @media only screen and (min-width: 1158px) {
   .example {
     display: block;
-    /* padding-bottom: 120px; */
+    padding-bottom: 120px;
   }
 }
 @media only screen and (min-width: 1158px) {
@@ -604,8 +619,7 @@ img {
 }
 @media only screen and (min-width: 1158px) {
   .team {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 120px 0;
   }
 }
 @media only screen and (max-width: 767.98px) {
@@ -657,11 +671,16 @@ img {
 }
 .team-item {
   background-color: var(--white-color);
-
   border-radius: 0px 0px 4px 4px;
   box-shadow: var(--shadow-team-item);
-  margin-bottom: 72px;
 }
+
+@media only screen and (max-width: 767.98px) {
+  .team-item:not(:last-child) {
+    margin-bottom: 72px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .team-item {
     margin-bottom: 0;
@@ -869,10 +888,6 @@ img {
   }
 }
 .footer-wrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 /* @media only screen and (min-width: 768px) and (max-width: 1157.98px) {
@@ -883,6 +898,7 @@ img {
 
 @media only screen and (min-width: 768px) {
   .footer-wrap {
+    display: flex;
     flex-wrap: wrap;
     text-align: left;
     flex-direction: row;
@@ -959,7 +975,7 @@ img {
 }
 
 .footer-social-wrap {
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1025,9 +1041,7 @@ img {
 }
 
 .subscribe {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
 @media only screen and (min-width: 768px) {
   .subscribe {
@@ -1054,7 +1068,6 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 320px;
 }
 @media only screen and (min-width: 768px) {
   .subscribe-form {
@@ -1243,7 +1256,6 @@ img {
   color: var(--light-slate-color);
 }
 .form-wrap {
-  width: 360px;
   flex-direction: column;
   align-items: center;
   margin-bottom: 8px;
