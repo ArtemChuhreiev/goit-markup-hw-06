@@ -1418,17 +1418,47 @@ img {
 /* Portfolio */
 
 .section-portfolio {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+@media only screen and (min-width: 768px) {
+  .section-portfolio {
+    padding-top: 64px;
+    padding-bottom: 98px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .section-portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+  }
+}
+
+.filters-container {
 }
 .filters-title {
 }
 
 .filters-list {
   display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-bottom: 72px;
+  justify-content: flex-start;
+  gap: 24px 16px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+@media only screen and (min-width: 768px) {
+  .filters-list {
+    justify-content: center;
+    margin-bottom: 64px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .filters-list {
+    gap: 24px;
+    margin-bottom: 72px;
+  }
 }
 .filters-button {
   font-family: "Roboto", sans-serif;
@@ -1467,12 +1497,32 @@ img {
 .raw-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  gap: 48px 24px;
+}
+@media only screen and (min-width: 768px) {
+  .raw-list {
+    gap: 72px 24px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .raw-list {
+    gap: 48px 24px;
+    min-width: 1158px;
+  }
 }
 .raw-item {
   position: relative;
   overflow: hidden;
+}
+@media only screen and (min-width: 768px) {
+  .raw-item {
+    max-width: 356px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .raw-item {
+    max-width: 360px;
+  }
 }
 .raw-link {
   display: block;

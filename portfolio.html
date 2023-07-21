@@ -54,6 +54,15 @@ for Your Business"
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggle-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -140,7 +149,7 @@ for Your Business"
                   <img
                     src="./images/portfolio/img4.jpg"
                     alt="taxi car dashboard"
-                    width="360"
+                    width="396"
                   />
                   <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -160,7 +169,7 @@ for Your Business"
                   <img
                     src="./images/portfolio/img5.jpg"
                     alt="Screen Illustrations planet"
-                    width="360"
+                    width="396"
                   />
                   <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -180,7 +189,7 @@ for Your Business"
                   <img
                     src="./images/portfolio/img6.jpg"
                     alt="girl with glasses and phone"
-                    width="360"
+                    width="396"
                   />
                   <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -200,7 +209,7 @@ for Your Business"
                   <img
                     src="./images/portfolio/img7.jpg"
                     alt="Instagram Stories Concept"
-                    width="360"
+                    width="396"
                   />
                   <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -220,7 +229,7 @@ for Your Business"
                   <img
                     src="./images/portfolio/img8.jpg"
                     alt="woman carrying vegetables in a bag"
-                    width="360"
+                    width="396"
                   />
                   <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -240,7 +249,7 @@ for Your Business"
                   <img
                     src="./images/portfolio/img9.jpg"
                     alt="barista and cup of coffee"
-                    width="360"
+                    width="396"
                   />
                   <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -323,5 +332,78 @@ for Your Business"
         </div>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="icons-mobile" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="list mobile-menu">
+        <li>
+          <a href="./index.html" class="header-link link">Studio</a>
+        </li>
+        <li>
+          <a href="./portfolio.html" class="header-link link active"
+            >Portfolio</a
+          >
+        </li>
+        <li>
+          <a href="" class="header-link link">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="list mobile-menu-contact">
+        <li>
+          <a href="tel:+110001111111" class="link mobile-modal-tel"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li>
+          <a href="mailto:info@devstudio.com" class="link mobile-modal-mail"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="icons-mobile-sosial">
+        <li class="icons-mobile-list">
+          <a href="" target="_blank" class="link icons-mobile-link">
+            <svg class="icons-mobil-svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram-2"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="icons-mobile-list">
+          <a href="" target="_blank" class="link icons-mobile-link">
+            <svg class="icons-mobil-svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="icons-mobile-list">
+          <a href="" target="_blank" class="link icons-mobile-link">
+            <svg class="icons-mobil-svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="icons-mobile-list">
+          <a href="" target="_blank" class="link icons-mobile-link">
+            <svg class="icons-mobil-svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin-1"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
